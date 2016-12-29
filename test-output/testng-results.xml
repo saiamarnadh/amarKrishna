@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="8870" started-at="2016-12-29T01:38:03Z" finished-at="2016-12-29T01:38:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="8870" started-at="2016-12-29T01:38:03Z" finished-at="2016-12-29T01:38:12Z">
+      <class name="ApartmentFinder.HomePage.HomepageObjectsTest">
+        <test-method status="PASS" signature="bannerBackgroundTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest@5e3a8624]" name="bannerBackgroundTest" duration-ms="8850" started-at="2016-12-28T19:38:03Z" finished-at="2016-12-28T19:38:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bannerBackgroundTest -->
+      </class> <!-- ApartmentFinder.HomePage.HomepageObjectsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
