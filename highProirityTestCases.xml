@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name = "highProiritySuite">
+    <test name = "highProirityTest">
+        <groups>
+            <run>
+                <include name = "highProirity"/>
+            </run>
+        </groups>
+        <packages>
+            <package name = "ApartmentFinder.HomePage"></package>
+            <package name = "ApartmentFinder.MyFavouritesPage"></package>
+        </packages>
+    </test>
+</suite>

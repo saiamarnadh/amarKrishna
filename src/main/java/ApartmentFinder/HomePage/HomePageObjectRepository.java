@@ -1,5 +1,7 @@
 package ApartmentFinder.HomePage;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -7,9 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePageObjectRepository {
 	
-	static WebDriver driver;
+	WebDriver driver;
 	public HomePageObjectRepository(WebDriver driver) {
 		this.driver = driver;
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -49,6 +52,84 @@ public class HomePageObjectRepository {
 	@FindBy(xpath = "//*[@id='companySpotlight']/div/div[1]/h2")
 	WebElement keyText;
 	
+	@FindBy(xpath = "//*[@id='appStoreAction']")
+	WebElement appStoreLink;
+	
+	@FindBy(xpath = "//*[@id='googlePlayAction']")
+	WebElement googlePlayLink;
+	
+	@FindBy(xpath = "//*[@id='featuresSpotlight']")
+	WebElement imgSection;
+	
+	@FindBy(xpath = "//*[@id='featuresSpotlight']/div")
+	WebElement divText;
+	
+	@FindBy(xpath = "//*[@id='globalFooter']/div[1]/div[1]/div/div/div[2]/a[1]/i")
+	WebElement iconFacebookCircle;
+	
+	@FindBy(xpath = "//*[@id='globalFooter']/div[1]/div[1]/div/div/div[2]/a[1]/i")
+	WebElement iconTwitterCircle;
+	
+	@FindBy(xpath = "//*[@id='globalFooter']/div[1]/div[1]/div/div/div[2]/a[1]/i")
+	WebElement iconBlogCircle;
+	
+	@FindBy(xpath = "//*[@id='globalFooter']/div[1]/div[1]/div/div/div[2]/a[1]/i")
+	WebElement iconYoutubeCircle;
+	
+	@FindBy(xpath = "//*[@id='globalFooter']/div[1]/div[1]/div/div/div[2]/a[1]/i")
+	WebElement iconPinterestCircle;
+	
+	@FindBy(xpath = "//*[@id='mobileSpotlight']/div/div[2]/div")
+	WebElement spotLightImage;
+	
+	@FindBy(xpath = "//*[@id='companySpotlight']/div/div[1]/p[1]/a")
+	WebElement statesLink;
+	
+	@FindBy(xpath = "//*[@id='companySpotlight']/div/div[1]/p[1]/strong")
+	WebElement strongText;
+	
+	@FindBy(xpath = "//*[@id='mainSearchWrap']/h1/span[1]")
+	WebElement bigFontText;
+	
+	public WebElement getStrongText(){
+		return strongText;
+	}
+	public WebElement getBigFontText(){
+		return bigFontText;
+	}
+	public WebElement getIconPinterestCircle(){
+		return iconPinterestCircle;
+	}
+	public WebElement getStatesLink(){
+		return statesLink;
+	}
+	public WebElement getIconYoutubeCircle(){
+		return iconYoutubeCircle;
+	}
+	public WebElement getIconBlogCircle(){
+		return iconBlogCircle;
+	}
+	public WebElement getIconTwitterCircle(){
+		return iconTwitterCircle;
+	}
+	public WebElement getIconFacebookCircle(){
+		return iconFacebookCircle;
+	}
+	public WebElement getDivText(){
+		return divText;
+	}
+	public WebElement getSpotLightImage(){
+		return spotLightImage;
+	}
+	public WebElement getAppStoreLink(){
+		return appStoreLink;
+	}
+	public WebElement getImgSection(){
+		return imgSection;
+	}
+	public WebElement getGooglePlayLink(){
+		return googlePlayLink;
+	}
 	public WebElement getLogo(){
 		return logo;
 	}

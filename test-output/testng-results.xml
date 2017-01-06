@@ -1,17 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="11" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8870" started-at="2016-12-29T01:38:03Z" finished-at="2016-12-29T01:38:12Z">
+  <suite name="highProiritySuite" duration-ms="70725" started-at="2017-01-04T00:09:10Z" finished-at="2017-01-04T00:10:21Z">
     <groups>
+      <group name="highProirity">
+        <method signature="HomepageObjectsTest1.HPLinkCountTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="HPLinkCountTest" class="ApartmentFinder.HomePage.HomepageObjectsTest1"/>
+        <method signature="HomepageObjectsTest1.HPSearchBoxValueTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="HPSearchBoxValueTest" class="ApartmentFinder.HomePage.HomepageObjectsTest1"/>
+        <method signature="HomepageObjectsTest1.HPTitleTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="HPTitleTest" class="ApartmentFinder.HomePage.HomepageObjectsTest1"/>
+        <method signature="HomepageObjectsTest1.homePageElementsTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="homePageElementsTest" class="ApartmentFinder.HomePage.HomepageObjectsTest1"/>
+        <method signature="MyFavPageTestWithoutLogin.FPCountWithoutLogin()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPCountWithoutLogin" class="ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin"/>
+        <method signature="MyFavPageTestWithoutLogin.FPLocationLookUpTest()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPLocationLookUpTest" class="ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin"/>
+        <method signature="MyFavPageTestWithoutLogin.FPObjectsTest()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPObjectsTest" class="ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin"/>
+        <method signature="MyFavPageTestWithoutLogin.FPTitleTest()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPTitleTest" class="ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin"/>
+      </group> <!-- highProirity -->
     </groups>
-    <test name="Default test" duration-ms="8870" started-at="2016-12-29T01:38:03Z" finished-at="2016-12-29T01:38:12Z">
-      <class name="ApartmentFinder.HomePage.HomepageObjectsTest">
-        <test-method status="PASS" signature="bannerBackgroundTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest@5e3a8624]" name="bannerBackgroundTest" duration-ms="8850" started-at="2016-12-28T19:38:03Z" finished-at="2016-12-28T19:38:12Z">
+    <test name="highProirityTest" duration-ms="70725" started-at="2017-01-04T00:09:10Z" finished-at="2017-01-04T00:10:21Z">
+      <class name="ApartmentFinder.HomePage.HomepageObjectsTest1">
+        <test-method status="PASS" signature="HPLinkCountTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="HPLinkCountTest" duration-ms="8891" started-at="2017-01-03T18:09:10Z" finished-at="2017-01-03T18:09:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bannerBackgroundTest -->
-      </class> <!-- ApartmentFinder.HomePage.HomepageObjectsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- HPLinkCountTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="closingBrowser" is-config="true" duration-ms="185" started-at="2017-01-03T18:09:19Z" finished-at="2017-01-03T18:09:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.HomePage.HomepageObjectsTest1.HPLinkCountTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+        <test-method status="PASS" signature="HPSearchBoxValueTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="HPSearchBoxValueTest" duration-ms="6807" started-at="2017-01-03T18:09:19Z" finished-at="2017-01-03T18:09:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HPSearchBoxValueTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="closingBrowser" is-config="true" duration-ms="2101" started-at="2017-01-03T18:09:26Z" finished-at="2017-01-03T18:09:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.HomePage.HomepageObjectsTest1.HPSearchBoxValueTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+        <test-method status="PASS" signature="HPTitleTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="HPTitleTest" duration-ms="6837" started-at="2017-01-03T18:09:28Z" finished-at="2017-01-03T18:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HPTitleTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="closingBrowser" is-config="true" duration-ms="163" started-at="2017-01-03T18:09:35Z" finished-at="2017-01-03T18:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.HomePage.HomepageObjectsTest1.HPTitleTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+        <test-method status="PASS" signature="homePageElementsTest()[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="homePageElementsTest" duration-ms="7549" started-at="2017-01-03T18:09:35Z" finished-at="2017-01-03T18:09:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageElementsTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.HomePage.HomepageObjectsTest1@4f7d0008]" name="closingBrowser" is-config="true" duration-ms="203" started-at="2017-01-03T18:09:42Z" finished-at="2017-01-03T18:09:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.HomePage.HomepageObjectsTest1.homePageElementsTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- ApartmentFinder.HomePage.HomepageObjectsTest1 -->
+      <class name="ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin">
+        <test-method status="PASS" signature="FPCountWithoutLogin()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPCountWithoutLogin" duration-ms="8486" started-at="2017-01-03T18:09:43Z" finished-at="2017-01-03T18:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FPCountWithoutLogin -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="closingBrowser" is-config="true" duration-ms="196" started-at="2017-01-03T18:09:51Z" finished-at="2017-01-03T18:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin.FPCountWithoutLogin() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+        <test-method status="PASS" signature="FPLocationLookUpTest()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPLocationLookUpTest" duration-ms="8272" started-at="2017-01-03T18:09:51Z" finished-at="2017-01-03T18:10:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FPLocationLookUpTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="closingBrowser" is-config="true" duration-ms="178" started-at="2017-01-03T18:10:00Z" finished-at="2017-01-03T18:10:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin.FPLocationLookUpTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+        <test-method status="PASS" signature="FPObjectsTest()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPObjectsTest" duration-ms="8653" started-at="2017-01-03T18:10:00Z" finished-at="2017-01-03T18:10:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FPObjectsTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="closingBrowser" is-config="true" duration-ms="2096" started-at="2017-01-03T18:10:08Z" finished-at="2017-01-03T18:10:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin.FPObjectsTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+        <test-method status="PASS" signature="FPTitleTest()[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="FPTitleTest" duration-ms="7976" started-at="2017-01-03T18:10:11Z" finished-at="2017-01-03T18:10:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FPTitleTest -->
+        <test-method status="PASS" signature="closingBrowser(java.lang.reflect.Method)[pri:0, instance:ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin@271053e1]" name="closingBrowser" is-config="true" duration-ms="2099" started-at="2017-01-03T18:10:19Z" finished-at="2017-01-03T18:10:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin.FPTitleTest() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingBrowser -->
+      </class> <!-- ApartmentFinder.MyFavouritesPage.MyFavPageTestWithoutLogin -->
+    </test> <!-- highProirityTest -->
+  </suite> <!-- highProiritySuite -->
 </testng-results>
