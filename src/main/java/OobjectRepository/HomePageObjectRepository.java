@@ -1,4 +1,4 @@
-package ApartmentFinder.HomePage;
+package OobjectRepository;
 
 import java.util.concurrent.TimeUnit;
 
@@ -18,6 +18,42 @@ public class HomePageObjectRepository {
 	
 	@FindBy(xpath = "//*[@id='globalHeader']/div/a/img")
 	WebElement logo;
+	
+	@FindBy(xpath = "//*[@id='quickSearch']/div[1]/div[2]/ul/li[1]/a")
+	WebElement anyButton;
+	
+	@FindBy(xpath = "//*[@id='quickSearch']/div[1]/div[2]/ul/li[2]/a/span")
+	WebElement studioButton;
+	
+	@FindBy(xpath = "//*[@id='quickSearch']/div[1]/div[2]/ul/li[3]/a")
+	WebElement oneBedButton;
+	
+	@FindBy(xpath = "//*[@id='quickSearch']/div[1]/div[2]/ul/li[4]/a")
+	WebElement twoBedButton;
+	
+	@FindBy(xpath = "//*[@id='minRent']")
+	WebElement minRentBox;
+	
+	@FindBy(xpath = "//*[@id='maxRent']")
+	WebElement maxRentBox;
+	
+	@FindBy(xpath = "//*[@id='quickSearch']/div[1]/div[2]/ul/li[5]/a/span")
+	WebElement threeBedButton;
+	
+	@FindBy(xpath = "//*[@id='quickSearch']/div[1]/div[2]/ul/li[6]/a/span")
+	WebElement fourBedButton;
+	
+	@FindBy(xpath = "//*[@id='headerAddListing']")
+	WebElement customerPortalIcon;
+	
+	@FindBy(xpath = "//*[@id='headerAddEditListing']")
+	WebElement addAListingIcon;
+	
+	@FindBy(xpath = "//*[@id='headerAdvertise']")
+	WebElement advertiseIcon;
+	
+	@FindBy(xpath = "//*[@id='headerMobileApps']")
+	WebElement mobileApps;
 	
 	@FindBy(xpath = "//*[@id='mainSearchWrap']")
 	WebElement colorSection;
@@ -91,6 +127,42 @@ public class HomePageObjectRepository {
 	@FindBy(xpath = "//*[@id='mainSearchWrap']/h1/span[1]")
 	WebElement bigFontText;
 	
+	public WebElement getAnyButton(){
+		return anyButton;
+	}
+	public WebElement getMinRentBox(){
+		return minRentBox;
+	}
+	public WebElement getMaxRentBox(){
+		return maxRentBox;
+	}
+	public WebElement getStudioButton(){
+		return studioButton;
+	}
+	public WebElement getOneBedButton(){
+		return oneBedButton;
+	}
+	public WebElement getTwoBedButton(){
+		return twoBedButton;
+	}
+	public WebElement getThreeBedButton(){
+		return threeBedButton;
+	}
+	public WebElement getFourBedButton(){
+		return fourBedButton;
+	}
+	public WebElement getCustomerPortalIcon(){
+		return customerPortalIcon;
+	}
+	public WebElement getAddAListingIcon(){
+		return addAListingIcon;
+	}
+	public WebElement getAdvertiseIcon(){
+		return advertiseIcon;
+	}
+	public WebElement getMobileApps(){
+		return mobileApps;
+	}
 	public WebElement getStrongText(){
 		return strongText;
 	}

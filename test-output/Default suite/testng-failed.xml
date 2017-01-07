@@ -3,16 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="ApartmentFinder.HomePage.HomepageObjectsTest1">
+      <class name="ApartmentFinder.SignInPage.SignPageObjectTest">
         <methods>
-          <include name="HPBoldFontSizeTest"/>
-          <include name="HPSearchBoxValueTest"/>
-          <include name="homePageElementsTest"/>
-          <include name="closingBrowser"/>
-          <include name="HPTitleTest"/>
-          <include name="HPLinkCountTest"/>
+          <include name="objectsTest"/>
         </methods>
-      </class> <!-- ApartmentFinder.HomePage.HomepageObjectsTest1 -->
+      </class> <!-- ApartmentFinder.SignInPage.SignPageObjectTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

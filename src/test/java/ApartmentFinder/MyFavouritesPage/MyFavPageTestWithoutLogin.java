@@ -8,13 +8,13 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import ApartmentFinder.HomePage.BasePage;
-import ApartmentFinder.HomePage.HomePageObjectRepository;
-import ApartmentFinder.HomePage.MyFavouritesPageObjectRepository;
+import OobjectRepository.HomePageObjectRepository;
+import OobjectRepository.MyFavouritesPageObjectRepository;
 
 public class MyFavPageTestWithoutLogin {
 	
 	WebDriver driver;
-	@AfterMethod
+	
 	public void tearDown() {
 	    if (this.driver != null) {
 	        this.driver.close();
@@ -28,7 +28,7 @@ public class MyFavPageTestWithoutLogin {
 	@Test(groups = {"highProirity"})
 	public void FPTitleTest() throws IOException{
 		MyFavouritePage FP = new MyFavouritePage();
-		driver = FP.MyFavTest(driver);
+		driver = FP.getMyFavouritePage(driver);
 		Assert.assertEquals(0, driver.getTitle().length());
 	}
 	
@@ -36,7 +36,7 @@ public class MyFavPageTestWithoutLogin {
 	@Test(groups = {"highProirity"})
 	public void FPCountWithoutLogin() throws IOException{
 		MyFavouritePage FP = new MyFavouritePage();
-		driver = FP.MyFavTest(driver);
+		driver = FP.getMyFavouritePage(driver);
 		MyFavouritesPageObjectRepository FOR = new MyFavouritesPageObjectRepository(driver);
 		Assert.assertEquals("0", FOR.getFavCount().getText());
 	}
@@ -45,7 +45,7 @@ public class MyFavPageTestWithoutLogin {
 	@Test(groups = {"highProirity"}) 
 	public void FPObjectsTest() throws IOException{
 		MyFavouritePage FP = new MyFavouritePage();
-		driver = FP.MyFavTest(driver);
+		driver = FP.getMyFavouritePage(driver);
 		MyFavouritesPageObjectRepository FOR = new MyFavouritesPageObjectRepository(driver);
 		Assert.assertEquals(true, FOR.getFavCount().isDisplayed());
 		Assert.assertEquals(true, FOR.getKeyText().isDisplayed());
@@ -80,7 +80,7 @@ public class MyFavPageTestWithoutLogin {
 	public void FPLinkCountTest() throws IOException{
 		MyFavouritePage FP = new MyFavouritePage();
 		BasePage BP = new BasePage();
-		this.driver = FP.MyFavTest(driver);
+		this.driver = FP.getMyFavouritePage(driver);
 		int linkCount = BP.getLinkCount(driver);
 		Properties prop = BP.getAccessProp();
 		Assert.assertEquals(Integer.parseInt(prop.getProperty("favPageLinkCount")), linkCount);
